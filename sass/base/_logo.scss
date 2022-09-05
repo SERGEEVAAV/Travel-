@@ -1,0 +1,29 @@
+.logo {
+    // display: flex;
+    cursor: pointer;
+    &:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+    
+}
+
+.logo-object {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.logo-path {
+    @extend %transition;
+}
+
+// .logo-svg:hover {
+//     .logo-path {
+//         fill: $color-primary;
+//     }
+// }
+
+.logo_title {
+    @include media-mobile {
+        display: none;
+    }
+}

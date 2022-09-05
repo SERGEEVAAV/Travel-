@@ -1,0 +1,26 @@
+
+
+.steps__title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: $color-additional;
+    font-size: calc(14px + 26 * (100vw / 1920));
+    line-height: 5.3rem;
+    font-weight: 500;
+    @include media-mobile {
+        margin-bottom: 20px;
+        margin-top: 0;
+        font-size: calc(14px + (26 + 26 *0.7) * ((100vw - 320px) / 1920));
+        line-height: 1.9rem;
+        font-weight: 500;
+        // @include font($size: 1.4rem, $height: 1.9rem, $weight: 500);
+      }
+}
+
+.step__title {
+    color: $color-steps;
+    @include media-mobile {
+        @include font($size: 1.0rem, $height: 1.2rem);
+    }
+}
