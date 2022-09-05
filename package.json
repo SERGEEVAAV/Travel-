@@ -1,0 +1,21 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "webpack-plugin": "^1.0.5"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.1"
+  },
+  "description": ""
+}

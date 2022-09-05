@@ -1,0 +1,84 @@
+.navigation__list {
+    display: flex;
+    padding: 0;
+    @include media-mobile {
+        position: fixed;
+        top: 0;
+        right: 16px;
+        width: 165px;
+        height: 250px;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        border-radius: 10px;
+        background: $color-hamburger_active;
+        z-index: 10;
+        display: block;
+        margin: 0;
+        transform: translate(0, -100%);
+        transition: all 0.5s ease 0s;
+        padding: 44px 15px 30px 44px;
+        text-align:right;
+    }
+}
+.navigation__list._active {
+    transform: translate(0, 0);
+}
+.navigation__link {
+    list-style: none;
+    cursor: pointer;
+    color: $color-link;
+    font-size: calc(12px + 4 * (100vw / 1920));
+    line-height: 2.1rem;
+    font-weight: 500;
+    // @include font($size: 1.6rem, $height: 2.1rem, $weight: 500);
+    font-family: 'Red Hat Text', sans-serif;
+    padding-right: 42px;
+    
+    &:hover{
+        color:$color-stories;
+        transition: all 0.5s ease 0s;
+    }
+    a {
+       
+        &:hover {
+            color:$color-stories;
+            transition: all 0.3s ease 0s;
+        }
+        text-decoration: none;
+        color: $color-link;
+    }
+    @include media-tablet {
+        font-size: calc(12px + (4 + 4 *0.7) * ((100vw - 768px) / 1920));
+        line-height: 2.1rem;
+        font-weight: 500;
+    }
+    @include media-mobile {
+        @include font($size: 1.6rem, $height: 2.1rem, $weight: 500);
+        padding: 0;
+       margin-bottom: 10px;
+    }
+}
+.navigation__link:nth-child(5), :nth-child(6) {
+    display: none;
+    @include media-mobile {
+        display: block;
+       
+    }
+}
+
+li a {
+    transition: 0.5s;
+}
+
+#myList {
+    display: none;
+
+    @include media-mobile {
+        display: block;
+
+        
+        
+    }
+}
+a {
+    text-decoration: none;
+}

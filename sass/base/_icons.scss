@@ -1,0 +1,86 @@
+.ico {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icon-square {
+    width: 100px;
+    height: 100px;
+    border-radius: 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &_coral {
+        background-color: $color-coral;
+        transition: 1s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    @include media-mobile {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.ico_cyclist {
+    background-image: url("../img/icon/cyclist.svg");
+    width: 50px;
+    height: 50px;
+    @include media-mobile {
+        background-image: url("../img/icon/mobile_cyclist.svg");
+        width: 35px;
+        height: 32px;
+    }
+}
+
+.ico_calendar {
+    background-image: url("../img/icon/Calendar.svg");
+    width: 54px;
+    height: 54px;
+    @include media-mobile {
+        background-image: url("../img/icon/mobile_calendar.svg");
+        width: 35px;
+        height: 35px;
+    }
+}
+
+.ico_airplan {
+    background-image: url("../img/icon/airplane.svg");
+    width: 61px;
+    height: 45px;
+    @include media-mobile {
+        background-image: url("../img/icon/mobile_airplane.svg");
+        width: 40px;
+        height: 30px;
+    }
+}
+.icon {
+    display: inline-block;
+    align-items: center;
+}
+.ico_arrow {
+    background-image: url("../img/icon/Right-Arrow.svg");
+    width: 40px;
+    height: 41px;
+    margin-right: 10px;
+    @include media-mobile {
+        background-image: url("../img/icon/Right-Arrow-mobile.svg");
+        width: 11px;
+        height: 10px;
+        margin-right: 6px;
+    }
+}
+
+.ico_facebook {
+    background-image: url('../img/icon/facebook.svg');
+    width: 23px;
+    height: 24px;
+    
+}
+
+.ico_google {
+    background-image: url('../img/icon/google.svg');
+    width: 23px;
+    height: 24px;
+}

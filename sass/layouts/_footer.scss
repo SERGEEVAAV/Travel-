@@ -1,0 +1,83 @@
+footer {
+    // height: 61px;
+   
+   
+    @include media-mobile {
+        height: 65px;
+        // overflow: hidden;
+    }
+   
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.footer__title {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+    color: $color-light;
+    
+    @include media-mobile {
+        display: none;
+    }
+}
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+}
+.footer__social {
+   
+    list-style: none;
+    margin: 0;
+}
+.footer__puplic {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    @include media-mobile {
+        display: none;
+    }
+}
+.social__link {
+    display: inline-block;
+}   
+
+.social__link__insta {
+    background-image: url("../img/social/insta.svg") no-repeat;
+    transition: 0.5s;
+    width: 34px;
+    height: 34px;
+    &:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+    
+}
+
+.social__link__youtube {
+    background-image: url("../img/social/youtube.svg") no-repeat;
+    transition: 0.5s;
+    width: 33px;
+    height: 28px;
+    &:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+}
+
+.social__link__twitter {
+    background-image: url("../img/social/twitter.svg") no-repeat;
+    transition: 0.5s;
+    width: 33px;
+    height: 27px;
+    &:hover {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+}

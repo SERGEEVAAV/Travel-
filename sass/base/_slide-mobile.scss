@@ -1,0 +1,30 @@
+.slider {
+    @include media-mobile {
+        max-width: 320px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.slider__items_mobile {
+	display: none;
+	@include media-mobile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+  
+}
+.slider_2, .slider_3, .slider_1 {
+	position: relative;
+	color: #ffffff;
+	border-radius: 16px;
+}
+
+
+img {
+	@include media-mobile {
+		border-radius: 16px;
+		
+	}
+}
